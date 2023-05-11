@@ -1,0 +1,44 @@
+<div>
+    <pre>
+    <label>SeachMovie </label>
+    <input #input_ID type="text "><br/>
+    <button (click)="Movie_Seach(input_ID.value)" >Check</button><br/>
+    </pre>
+  </div>
+  <html>
+    <head>
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        th, td {
+          padding: 20px;
+          text-align: left;
+          border-bottom: 1px solid #000000;
+        }
+      </style>
+    </head>
+    <body>
+      <table>
+        <thead>
+          <tr>
+            <th>MovieID</th>
+            <th>MovieName</th>
+            <th>TypeMovie</th>
+            <th>MoviePrice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{Movie_ID}}</td>
+            <td>{{Movie_Name}}</td>
+            <td>{{Movie_Type}}</td>
+            <td>{{Movie_Price}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>
+
+
